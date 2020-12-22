@@ -26,7 +26,6 @@ The code has been tested with Python 3.6, PyTorch 1.0.0, Tensorflow 1.12.0 and C
 ### Usage
 
 ##### Data Preparation
-()
 Firstly, you should download the [ModelNet40 dataset](https://drive.google.com). [SHREC15 dataset](). [ShapeNet part dataset](). [S3DIS dataset]().
 ```
 
