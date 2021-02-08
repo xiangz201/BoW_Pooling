@@ -43,7 +43,7 @@ CUDA 9.0
 ### Usage
 
 ##### Data Preparation
-Firstly, you should download the [ModelNet40 dataset](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip), [SHREC15 dataset](https://www.icst.pku.edu.cn/zlian/representa/3d15/dataset/index.htm), [ShapeNet part dataset](https://github.com/charlesq34/pointnet/blob/master/part_seg/download_data.sh) or our prepared [HDF5 files](https://drive.google.com/drive/folders/1c1vGv0WKmNM-h0N9Y1LuYcUv7OMtQe_k?usp=sharing), [S3DIS dataset](https://shapenet.cs.stanford.edu/media/indoor3d_sem_seg_hdf5_data.zip).
+Firstly, you should download the [ModelNet40 dataset](https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip), [SHREC15 dataset](https://www.icst.pku.edu.cn/zlian/representa/3d15/dataset/index.htm) or [HDF5 files](https://drive.google.com/drive/folders/1c1vGv0WKmNM-h0N9Y1LuYcUv7OMtQe_k?usp=sharing), [ShapeNet part dataset](https://github.com/charlesq34/pointnet/blob/master/part_seg/download_data.sh) we use, [S3DIS dataset](https://shapenet.cs.stanford.edu/media/indoor3d_sem_seg_hdf5_data.zip).
 <!--```-->
 
 <!--```-->
