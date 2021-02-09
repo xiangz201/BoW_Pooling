@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85dc55dd-bcd9-4d33-a344-23721da7efd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/figures/bow.png" beforeDir="false" afterPath="$PROJECT_DIR$/figures/bow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/figures/pipeline.png" beforeDir="false" afterPath="$PROJECT_DIR$/figures/pipeline.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/bow_pooling.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/bow_pooling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/pytorch.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/bow_pooling.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/data/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/pretrained/model.1024.t7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/util.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1o8tMpjM5nqe1T5YDnSacHX7GwV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="bow_pooling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BoW_Pooling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch/bow_pooling_dgcnn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/bow_pooling_dgcnn/bow_pooling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bow_pooling" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85dc55dd-bcd9-4d33-a344-23721da7efd0" name="Default Changelist" comment="" />
+      <created>1612679999068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612679999068</updated>
+      <workItem from="1612680000296" duration="15941000" />
+      <workItem from="1612799573363" duration="11092000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/dgcnn/model.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch/3dgcn/classification/bow_pooling.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BoW_Pooling$bow_pooling.coverage" NAME="bow_pooling Coverage Results" MODIFIED="1612855723037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pytorch/bow_pooling_dgcnn" />
+  </component>
+</project>

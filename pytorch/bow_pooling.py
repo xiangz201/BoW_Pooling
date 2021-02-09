@@ -8,6 +8,7 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import os
 from sklearn.cluster import MiniBatchKMeans
 
 
@@ -72,59 +73,70 @@ def aggregation(inputs, atype='sum'):
 
 
 def update_dictionary(args, device, model, train_loader):
-    """ update dictionary with EM algorithm
+    """ cluster dictionary from train_loader with KMeans algorithm
+        Args:
+            args: global args with item 'dictionary', or use global dictionary
+            device: torch.device('cuda')
+            model: model of network
+            train_loader: torch.utils.data.DataLoader, in it: data [B, C, N], label [B, 1]
+    """
+    # Start cluster data
+    count = 0
+    batch_size = 0
+    num_points = 0
+    dictionary_x = []
+    for data, label in train_loader:
+        count = count + 1
+        data, label = data.to(device), label.to(device).squeeze()
+        data = data.permute(0, 2, 1)
+        batch_size = data.size(0)
+        num_points = data.size(2)
+        _, x = model(data)
+        dictionary_x.append(x.cpu().detach().numpy())
+    dictionary = []
+    # use random selected positions features, less time and comparable effect
+    for i in np.random.randint(0, count, count / 2):
+        for j in np.random.randint(0, batch_size, batch_size / 2):
+            for k in np.random.randint(0, num_points, num_points / 2):
+                dictionary.append(dictionary_x[i][j, :, k])
+
+    """
+    # use all positions features
+    for i in range(count):
+        for j in range(batch_size):
+            for k in range(num_points):
+                dictionary.append(dictionary_x[i][j, :, k])
+    """
+    del dictionary_x, data, label, batch_size, count, num_points
+    dictionary = np.array(dictionary)
+    mm = MiniBatchKMeans(n_clusters=args.dictionary.size(0), init_size=args.dictionary.size(0) * 3).fit(dictionary)
+    del dictionary
+    cluster_center = torch.from_numpy(mm.cluster_centers_).to(device)
+    np.savetxt("dictionary.txt", cluster_center.cpu().detach().numpy(), fmt='%f', delimiter=',')
+    args.dictionary = cluster_center
+    del cluster_center
+    # Finish cluster data
+
+
+def EM_Update(args, device, model, train_loader):
+    """update dictionary with EM algorithm
         Args:
             args: global args
             device: torch.device('cuda')
             model: model of network
             train_loader: data
     """
-    # Start updating dictionary with EM algorithm
-    cout = 0
-    batch_size = 0
-    dictionary_x = []
-    for data, label in train_loader:
-        cout = cout + 1
-        data, label = data.to(device), label.to(device).squeeze()
-        data = data.permute(0, 2, 1)
-        batch_size = data.size(0)
-        _, x = model(data)
-        dictionary_x.append(x.cpu().detach().numpy())
-    dictionary = []
-    # use random select feature
-    for i in np.random.randint(0, cout, 25):
-        for j in np.random.randint(0, batch_size, 10):
-            for k in np.random.randint(0, args.num_points, 200):
-                dictionary.append(dictionary_x[i][j, :, k])
-
-    """
-    # use all point
-    for i in range(cout):
-        for j in range(batch_size):
-            for k in range(args.num_points):
-                dictionary.append(dictionary_x[i][j, :, k])
-    """
-    del dictionary_x, data, label, batch_size, cout
-    dictionary = np.array(dictionary)
-    mm = MiniBatchKMeans(n_clusters=1024, init_size=1024 * 3).fit(dictionary)
-    del dictionary
-    cluster_center = torch.from_numpy(mm.cluster_centers_).to(device)
-    np.savetxt("dictionary.txt", cluster_center.cpu().detach().numpy(), fmt='%f', delimiter=',')
-    args.dictionary = cluster_center
-    del cluster_center
-    # Finish updating dictionary with EM algorithm
-
-
-def EM_Update(args, device, model, train_loader):
-    torch.save(model.state_dict(), 'checkpoints/%s/models/model_train.t7' % args.exp_name)
+    # Start update dictionary with EM algorithm
     update_dictionary(args, device, model, train_loader)
-    model_dict = torch.load('checkpoints/%s/models/model_train.t7' % args.exp_name)
-    pretrained_dict = {k: v for k, v in model_dict.items() if k == 'module.dictionary'}
-    pretrained_dict['module.dictionary'] = args.dictionary
+    model_dict = model.state_dict()
+    pretrained_dict = {k: v for k, v in model_dict.items() if 'dictionary' in k}
+    for key in pretrained_dict:
+        pretrained_dict[key] = args.dictionary
     model_dict.update(pretrained_dict)
     model.load_state_dict(model_dict)
     del pretrained_dict, model_dict
     # os.system('cp dictionary.txt checkpoints' + '/' + args.exp_name + '/' + 'dictionary.txt')
+    # Finish update dictionary with EM algorithm
 
 
 class Bow_Pooling(nn.Module):
