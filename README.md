@@ -1,6 +1,6 @@
 ## BoW Pooling: A Plug-and-Play Unit for Feature Aggregation of Point Clouds
 Created by Xiang Zhang, Xiao Sun, Zhouhui Lian from Peking University.
-
+#### [paper]() | [video](https://virtual.2021.aaai.org/paper_AAAI-1163.html) | [slides](https://drive.google.com/file/d/1NpFgYVZm6D-uARZ7eiRoihaPeNOerDkU/view?usp=sharing)
 <!--![pipeline](figures/pipeline.png)-->
 <!--![pipeline](figures/bow.png)-->
 <p align="left">
@@ -13,10 +13,10 @@ Created by Xiang Zhang, Xiao Sun, Zhouhui Lian from Peking University.
 
 ### Introduction
 
-This work will appear in AAAI 2021. We propose the BoW pooling, a plug-and-play unit that substitutes for the symmetric functions in existing methods for the feature aggregation of point clouds. A novel dictionary update strategy is explored and discussed. The truncated Linear Unit is introduced to suppress the expression of unimportant local descriptors. You can also check out [paper]() for a deeper introduction.
+This work will appear in AAAI 2021. We propose the BoW pooling, a plug-and-play unit that substitutes for the symmetric functions in existing methods for the feature aggregation of point clouds. A novel dictionary update strategy is explored and discussed. The truncated Linear Unit is introduced to suppress the expression of unimportant local descriptors.
 
 Point cloud provides a compact and flexible representation for 3D shapes and recently attracts more and more attentions due to the increasing demands in practical applications. The major challenge of handling such irregular data is how to achieve the permutation invariance of points in the input.
-
+We argue that some discrimination information is inevitably missing when applying the max/avg pooling across all local descriptors. We propose the BoW pooling, a plug-and-play unit to substitute the max pooling. Our BoW pooling analyzes the set of local descriptors statistically and generates a histogram that reflects how the primitives in the dictionary constitute the overall geometry.
 
 In this repository, we release the code and data for BoW pooling for point cloud classification, shape retrieval and segmentation tasks.
 
@@ -58,7 +58,7 @@ CUDA_VISIBLE_DEVICES='0, 1' python train.py
 
 ##### Test Model
 
-The pretrained backbone model with BoW pooling weights are stored in [pretrained model](https://drive.google.com). You can download it.
+The pretrained backbone model with BoW pooling weights are stored in each demo. You can download it.
 
 To evaluate the BoW pooling for classification:
 

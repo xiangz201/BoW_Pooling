@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85dc55dd-bcd9-4d33-a344-23721da7efd0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/figures/bow.png" beforeDir="false" afterPath="$PROJECT_DIR$/figures/bow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figures/pipeline.png" beforeDir="false" afterPath="$PROJECT_DIR$/figures/pipeline.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/bow_pooling.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch/bow_pooling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/pytorch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/bow_pooling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/data/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/pretrained/model.1024.t7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/demo_dgcnn/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612679999068</updated>
       <workItem from="1612680000296" duration="15941000" />
-      <workItem from="1612799573363" duration="11092000" />
+      <workItem from="1612799573363" duration="12385000" />
     </task>
     <servers />
   </component>
